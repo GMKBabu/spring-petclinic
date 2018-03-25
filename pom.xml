@@ -180,9 +180,9 @@
       </plugin>
 
       <plugin>
-        <groupId>ro.isdc.wro4j</groupId>
-        <artifactId>wro4j-maven-plugin</artifactId>
-        <version>${wro4j.version}</version>
+      #  <groupId>ro.isdc.wro4j</groupId>
+      #  <artifactId>wro4j-maven-plugin</artifactId>
+       # <version>${wro4j.version}</version>
         <executions>
           <execution>
             <phase>generate-resources</phase>
@@ -199,6 +199,11 @@
           <contextFolder>${basedir}/src/main/less</contextFolder>
         </configuration>
         <dependencies>
+       <dependency>
+      <groupId>ro.isdc.wro4j</groupId>
+      <artifactId>wro4j-maven-plugin</artifactId>
+      <version>1.8.0</version>
+       </dependency>
           <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
